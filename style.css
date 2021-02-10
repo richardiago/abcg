@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family:DejaVu Sans Mono, monospace;
 }
 
 .header {
@@ -9,14 +10,29 @@ body {
 }
 
 .column {
+    /* background-color: #f1f1f1; */
     float: left;
-    width: 33.33%;
-    padding: 15px;
+    padding: 5px;
 }
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+  }
 
 .footer {
     background-color: #F1F1F1;
     text-align: center;
     padding: 10px;
 }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
   
